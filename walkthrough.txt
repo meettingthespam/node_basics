@@ -1,0 +1,54 @@
+Node is fast, efficient and highly scaleable
+
+non-blocking input/output calls
+
+asynchronous meaning multiple things run
+and then while the program is waiting for the first
+function/call/whatever to finish then the
+program goes to the next function/call/whatever
+to run, synchronous would mean that the program calls
+a function and then waits for that function to finish
+until starting the next.
+(waiter at a busy restaurant grabing multiple tables
+while the cook makes the dishes would be asynchronous)
+
+
+Node is good for anything that is not CPU intensive
+REST API and microservices
+Real time services (chat, ect)
+CRUD apps (blogs, shopping carts, social networks, ect)
+
+NPM BASH COMMANDS FOR NODE:
+npm init <- generates a package.json file
+npm install express <- installs a package locally
+npm install -g nodemon <- installs a pacakge globally
+npm install --save-dev nodemon <- installs as a dev dependency
+npm install -D nodemon  <- also installs as a dev dependency
+
+
+
+Node Modules
+modules are just files with an export
+(modules are like libraries in python)
+
+
+when you initialize (npm init) a new program,
+the package.json file will store all of the dependecies
+(modules/libraries, ect), so you can just npm install
+to reinstall all of them
+
+
+we'll install uuid to generate random IDs
+npm install uuid
+notice, it'll be in the package.json file
+as well as a newly generated Node Modues folder
+(like react does) (note: never deploy the node modules folder,
+always just do the package.json file and that way the end user will
+install the modules with npm install (which also includes the
+modules' version))
+
+
+
+Node can run whatever .js file you want,
+just call node javaSCriptFile.js
+and it'll run it
